@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  display: inline-black;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+}
+
+.form-container {
+  width: 100%;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form class="form-container">
+    <h1>Cadastro de Usuário</h1>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" placeholder="Seu telefone..">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Seu email..">
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" placeholder="Sua senha..">
+
+    <label for="sexo">Sexo:</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="feminino" name="sexo" value="feminino">
+    <label for="feminino">Feminino</label>
+
+    <label for="uf">UF:</label>
+    <select id="uf" name="uf">
+      <option value="df">DF</option>
+      <option value="sp">SP</option>
+      <option value="rj">RJ</option>
+    </select>
+
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" id="futebol" name="hobbies" value="futebol">
+    <label for="futebol">Futebol</label>
+    <input type="checkbox" id="xadrez" name="hobbies" value="xadrez">
+    <label for="xadrez">Xadrez</label>
+    <input type="checkbox" id="esportes" name="hobbies" value="esportes">
+    <label for="esportes">Esportes</label>
+    <input type="checkbox" id="musica" name="hobbies" value="musica">
+    <label for="musica">Música</label>
+    <input type="checkbox" id="cinema" name="hobbies" value="cinema">
+    <label for="cinema">Cinema</label>
+    <input type="checkbox" id="leitura" name="hobbies" value="leitura">
+    <label for="leitura">Leitura</label>
+
+    <label for="observacao">Observação:</label>
+    <textarea id="observacao" name="observacao" placeholder="Escreva sua observação.."></textarea>
+
+    <button type="submit">Voltar</button>
+    <button type="submit">Limpar</button>
+    <button type="submit">Salvar</button>
+
+  </form>
+</div>
+
+</body>
+</html>
